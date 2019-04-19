@@ -5,6 +5,12 @@ namespace Common.Email.Package.MessageInformation.Implementations
 {
     public class EmailMessage : IEmailMessage
     {
+        public EmailMessage()
+        {
+            ToAddress = new List<IEmailAddress>();
+            CCAddress = new List<IEmailAddress>();
+            BccAddress = new List<IEmailAddress>();
+        }
         public List<IEmailAddress> ToAddress { get; set; }
         public List<IEmailAddress> CCAddress { get; set; }
         public List<IEmailAddress> BccAddress { get; set; }

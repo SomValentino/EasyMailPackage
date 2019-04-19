@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="IntegrationTests" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="EmailFile.txt" />
     <EmbeddedResource Include="EmailFile.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

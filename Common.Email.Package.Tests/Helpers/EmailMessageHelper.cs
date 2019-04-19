@@ -12,6 +12,7 @@ namespace Common.Email.Package.Tests.Helpers
         public List<IEmailAddress> CcAddresses { get; }
         public List<IEmailAddress> BccAddress { get; }
         public List<Attachment> Attachment { get; }
+        public TestEmailConfiguration TestEmailConfiguration { get; }
 
         public EmailMessageHelper()
         {
@@ -58,6 +59,13 @@ namespace Common.Email.Package.Tests.Helpers
                     MediaType = "appliction/vnp.txt",
                     MediaSubType = ""
                 }
+            };
+            TestEmailConfiguration = new TestEmailConfiguration
+            {
+                SmtpServer = "smtp.gmail.com",
+                SmtpUsername = "valazom@gmail.com",
+                SmtpPassword = "Az0m-12345@#",
+                SmtpPort = 587
             };
         }
         
