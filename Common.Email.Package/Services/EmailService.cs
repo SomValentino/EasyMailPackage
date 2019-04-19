@@ -16,6 +16,8 @@ namespace Common.Email.Package.Services
         public HashSet<string> AuthenticationMechanisms { get; set; }
         
         public EmailContentFormat EmailBodyFormat { get; set; }
+        
+        public bool UseSsl { get; set; }
         public EmailMessageResult messageResult {get; set;}
 
         public EmailService()
@@ -38,7 +40,7 @@ namespace Common.Email.Package.Services
 
                 using (var emailClient = new MailKit.Net.Smtp.SmtpClient())
                 {
-                    await emailClient.ConnectAsync(emailConfiguration.SmtpServer, emailConfiguration.SmtpPort, true);
+                    await emailClient.ConnectAsync(emailConfiguration.SmtpServer, emailConfiguration.SmtpPort, UseSsl);
                     // if the user has added extra authentication mechnanisms add them to the email client
                     if (AuthenticationMechanisms != null && AuthenticationMechanisms.Any())
                     {
@@ -85,7 +87,8 @@ namespace Common.Email.Package.Services
             }
             catch (System.Exception ex)
             {
-                SetExceptionResult<EmailConnectionException>(ex);
+                var emailConnectionException = new EmailConnectionException(ex.Message,ex);
+                SetExceptionResult<EmailConnectionException>(emailConnectionException);
                 return messageResult;
             }
         }
@@ -93,7 +96,7 @@ namespace Common.Email.Package.Services
         private void SetExceptionResult<T>(Exception ex) where T : Exception
         {
             messageResult.Status = Status.Failure;
-            messageResult.Exception = (T)ex;
+            messageResult.Exception = (T) ex;
         }
 
         private MimeMessage GetInternetAddress(IEmailMessage emailMessage){
@@ -115,7 +118,7 @@ namespace Common.Email.Package.Services
 
             //if the email message has attachements add the attachements
             AddAttachments(emailMessage, builder);
-            
+            message.Body = builder.ToMessageBody();
             return message;
         }
 
@@ -152,8 +155,7 @@ namespace Common.Email.Package.Services
             {
                 foreach (var attachment in emailMessage.Attachments)
                 {
-                    builder.Attachments.Add(attachment.FileName, attachment.FileStream,
-                        new ContentType(attachment.MediaType, attachment.MediaSubType));
+                    builder.Attachments.Add(attachment.FileName);
                 }
             }
         }

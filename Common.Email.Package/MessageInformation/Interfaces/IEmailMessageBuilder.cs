@@ -19,7 +19,7 @@ namespace Common.Email.Package.MessageInformation.Interfaces
          IEmailMessageBuilder AddSubject(string subject);
          IEmailMessageBuilder AddBody(string body);
          IEmailMessageBuilder AddAttachment(Attachment attachment);
-         IEmailMessageBuilder AddAttachment(string fileName, Stream fileStreame,string mediaType, string mediaSubType);
+         IEmailMessageBuilder AddAttachment(string fileName);
          IEmailMessageBuilder AddAttachment(IEnumerable<Attachment> attachments);
          IEmailMessage Build();
     }

@@ -55,17 +55,14 @@ namespace Common.Email.Package.Tests.Helpers
                 new Attachment
                 {
                     FileName = "EmailFile.txt",
-                    FileStream = new FileStream("EmailFile.txt", FileMode.Open),
-                    MediaType = "appliction/vnp.txt",
-                    MediaSubType = ""
                 }
             };
             TestEmailConfiguration = new TestEmailConfiguration
             {
                 SmtpServer = "smtp.gmail.com",
-                SmtpUsername = "valazom@gmail.com",
-                SmtpPassword = "Az0m-12345@#",
-                SmtpPort = 587
+                SmtpUsername = "YOUREMAIL@gmail.com",
+                SmtpPassword = "YOURPASSWORD",
+                SmtpPort = 465
             };
         }
         

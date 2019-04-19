@@ -11,6 +11,7 @@ namespace Common.Email.Package.Services
          IEmailConfiguration emailConfiguration {set;}
          HashSet<string> AuthenticationMechanisms {set;}
          EmailContentFormat EmailBodyFormat { set; }
+         bool UseSsl { set; }
          Task<EmailMessageResult> SendAsync(IEmailMessage message);
     }
 }

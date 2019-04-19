@@ -26,10 +26,9 @@ namespace Common.Email.Package.MessageInformation.Implementations
             return this;
         }
 
-        public IEmailMessageBuilder AddAttachment(string fileName, Stream fileStreame, string mediaType, string mediaSubType)
+        public IEmailMessageBuilder AddAttachment(string fileName)
         {
-            attachments.Add(new Attachment{ FileName = fileName, FileStream = fileStreame,
-                        MediaType = mediaType,MediaSubType = mediaSubType});
+            attachments.Add(new Attachment{ FileName = fileName});
             return this;
         }
 
