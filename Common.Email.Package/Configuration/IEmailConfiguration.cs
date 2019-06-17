@@ -2,9 +2,10 @@ namespace Common.Email.Package.Configuration
 {
     public interface IEmailConfiguration
     {
-        string  SmtpServer { get; set; }
-        int SmtpPort { get; set; }
-        string SmtpUsername { get; set; }
-        string SmtpPassword { get; set; }
+        string  ServerAddress { get; set; }
+        int Port { get; set; }
+        string Username { get; set; }
+        string Password { get; set; }
+        bool RequireSSL { get; set; }
     }
 }

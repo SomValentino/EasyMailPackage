@@ -1,6 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>GermStone.QuickEmail.Sender</PackageId>
+    <Title>GermStone.QuickEmail.Sender</Title>
+    <Authors>Valentine Azom</Authors>
+    <Description>A library for send emails quickly without hastle. An abstraction over MailKit.</Description>
+    <PackageProjectUrl>https://github.com/SomValentino/QuickMailPackage</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SomValentino/QuickMailPackage</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <PackageTags>email;quick;sender;germstone;fast</PackageTags>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="MailKit" Version="2.1.4" />

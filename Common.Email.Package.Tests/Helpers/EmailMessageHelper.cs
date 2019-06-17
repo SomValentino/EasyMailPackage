@@ -13,6 +13,8 @@ namespace Common.Email.Package.Tests.Helpers
         public List<IEmailAddress> BccAddress { get; }
         public List<Attachment> Attachment { get; }
         public TestEmailConfiguration TestEmailConfiguration { get; }
+        public TestEmailConfiguration Pop3EmailConfiguration { get; }
+        public TestEmailConfiguration ImapEmailConfiguration { get;}
 
         public EmailMessageHelper()
         {
@@ -59,10 +61,28 @@ namespace Common.Email.Package.Tests.Helpers
             };
             TestEmailConfiguration = new TestEmailConfiguration
             {
-                SmtpServer = "smtp.gmail.com",
-                SmtpUsername = "YOUREMAIL@gmail.com",
-                SmtpPassword = "YOURPASSWORD",
-                SmtpPort = 465
+                ServerAddress = "smtp.gmail.com",
+                Username = "valazom@gmail.com",
+                Password = "Az0m-12345@#",
+                Port = 465
+            };
+
+            Pop3EmailConfiguration = new TestEmailConfiguration
+            {
+                ServerAddress = "pop.gmail.com",
+                Username = "valazom@gmail.com",
+                Password = "Az0m-12345@#",
+                Port = 995,
+                RequireSSL = true
+            };
+
+            ImapEmailConfiguration = new TestEmailConfiguration
+            {
+                ServerAddress = "imap.gmail.com",
+                Username = "valazom@gmail.com",
+                Password = "Az0m-12345@#",
+                Port = 993,
+                RequireSSL = true
             };
         }
         

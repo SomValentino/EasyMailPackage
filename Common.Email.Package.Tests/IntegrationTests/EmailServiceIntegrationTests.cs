@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Threading.Tasks;
 using Common.Email.Package.Enums;
 using Common.Email.Package.Exceptions;
@@ -20,7 +21,6 @@ namespace Common.Email.Package.Tests.IntegrationTests
             _emailService = new EmailService();
             _messageHelper = new EmailMessageHelper();
             _testEmailMessageBuilder = new TestEmailMessageBuilder();
-            _emailService.emailConfiguration = _messageHelper.TestEmailConfiguration;
         }
 
         [Test]
@@ -31,9 +31,9 @@ namespace Common.Email.Package.Tests.IntegrationTests
                 .AddSubject("Test Email")
                 .AddBody("Test Email")
                 .AddAttachment(_messageHelper.Attachment).Build();
-            _emailService.UseSsl = true;
             
-            var messageResult = await _emailService.SendAsync(message);
+            
+            var messageResult = await _emailService.SendAsync(message,_messageHelper.TestEmailConfiguration);
 
             Assert.That(messageResult, Is.Not.Null);
             Assert.That(messageResult.Status,Is.EqualTo(Status.Success)); 
@@ -49,14 +49,41 @@ namespace Common.Email.Package.Tests.IntegrationTests
                 .AddSubject("Test Email")
                 .AddBody("Test Email")
                 .AddAttachment(_messageHelper.Attachment).Build();
-            _messageHelper.TestEmailConfiguration.SmtpUsername = "i";
-            _emailService.UseSsl = true;
+            _messageHelper.TestEmailConfiguration.Username = "i";
             
-            var messageResult = await _emailService.SendAsync(message);
+            var messageResult = await _emailService.SendAsync(message,_messageHelper.TestEmailConfiguration);
 
             Assert.That(messageResult, Is.Not.Null);
             Assert.That(messageResult.Status,Is.EqualTo(Status.Failure)); 
             Assert.That(messageResult.Exception, Is.InstanceOf<EmailConnectionException>());
+        }
+        
+        [TestCase(5)]
+        [TestCase(10)]
+        [TestCase(15)]
+        [TestCase(20)]
+        public async Task
+            GetEmailMessageFromServerViaImapAsync_GivenImapEmailConfigurationAndBatchSize_ReturnExtractedEmails(int batchSize)
+        {
+            var extractedMessages =
+                await _emailService.GetEmailMessageFromServerViaImapAsync(_messageHelper.ImapEmailConfiguration, batchSize);
+            
+            Assert.That(extractedMessages,Is.Not.Null);
+            Assert.That(extractedMessages.Count(),Is.EqualTo(batchSize));
+        }
+        
+        [TestCase(5)]
+        [TestCase(10)]
+        [TestCase(15)]
+        [TestCase(20)]
+        public async Task
+            GetEmailMessageFromServerViaImapAsync_GivenPopEmailConfigurationAndBatchSize_ReturnExtractedEmails(int batchSize)
+        {
+            var extractedMessages =
+                await _emailService.GetEmailMessageFromServerViaPopAsync(_messageHelper.Pop3EmailConfiguration, batchSize);
+            
+            Assert.That(extractedMessages,Is.Not.Null);
+            Assert.That(extractedMessages.Count(),Is.EqualTo(batchSize));
         }
         
     }

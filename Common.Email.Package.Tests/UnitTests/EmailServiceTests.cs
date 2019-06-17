@@ -4,6 +4,7 @@ using Common.Email.Package.Exceptions;
 using Common.Email.Package.MessageInformation;
 using Common.Email.Package.MessageInformation.Implementations;
 using Common.Email.Package.Services;
+using Common.Email.Package.Tests.Helpers;
 using NUnit.Framework;
 
 namespace Common.Email.Package.Tests.UnitTests
@@ -12,18 +13,20 @@ namespace Common.Email.Package.Tests.UnitTests
     public class EmailServiceTests
     {
         private IEmailService _emailService;
+        private EmailMessageHelper _messageHelper;
         
         [SetUp]
         public void Initialize()
         {
             _emailService = new EmailService();
+            _messageHelper = new EmailMessageHelper();
         }
 
         [Test]
         public async Task SendAsync_GivenAnEmptyEmailMessage_ReturnsMessageResultWithFailureAndEmailMessageNotFoundException()
         {
             EmailMessage message = null;
-            var messageResult = await _emailService.SendAsync(message);
+            var messageResult = await _emailService.SendAsync(message,_messageHelper.TestEmailConfiguration);
             Assert.That(messageResult,Is.Not.Null);
             Assert.That(messageResult.Status,Is.EqualTo(Status.Failure));
             Assert.That(messageResult.Exception,Is.InstanceOf<EmailMessageNotFoundException>());
@@ -34,7 +37,7 @@ namespace Common.Email.Package.Tests.UnitTests
             SendAsync_GivenAnEmailMessageWithNoToAddress_ReturnsMessageResultWithFailureAndEmailToAddressNotFoundException()
         {
             EmailMessage message = new EmailMessage();
-            var messageResult = await _emailService.SendAsync(message);
+            var messageResult = await _emailService.SendAsync(message,_messageHelper.TestEmailConfiguration);
             Assert.That(messageResult,Is.Not.Null);
             Assert.That(messageResult.Status,Is.EqualTo(Status.Failure));
             Assert.That(messageResult.Exception,Is.InstanceOf<EmailToAddressNotFoundException>());
@@ -46,7 +49,7 @@ namespace Common.Email.Package.Tests.UnitTests
         {
             EmailMessage message = new EmailMessage();
             message.ToAddress.Add(new EmailAddress{Name="",Address = ""});
-            var messageResult = await _emailService.SendAsync(message);
+            var messageResult = await _emailService.SendAsync(message,_messageHelper.TestEmailConfiguration);
             Assert.That(messageResult,Is.Not.Null);
             Assert.That(messageResult.Status,Is.EqualTo(Status.Failure));
             Assert.That(messageResult.Exception,Is.InstanceOf<EmailFromAddressNotFoundException>());
@@ -59,7 +62,7 @@ namespace Common.Email.Package.Tests.UnitTests
             EmailMessage message = new EmailMessage();
             message.ToAddress.Add(new EmailAddress{Name="",Address = ""});
             message.FromAddress = new EmailAddress{Name ="",Address = ""};
-            var messageResult = await _emailService.SendAsync(message);
+            var messageResult = await _emailService.SendAsync(message,_messageHelper.TestEmailConfiguration);
             Assert.That(messageResult,Is.Not.Null);
             Assert.That(messageResult.Status,Is.EqualTo(Status.Failure));
             Assert.That(messageResult.Exception,Is.InstanceOf<EmailSubjectNotFoundException>());
@@ -73,10 +76,12 @@ namespace Common.Email.Package.Tests.UnitTests
             message.ToAddress.Add(new EmailAddress{Name="",Address = ""});
             message.FromAddress = new EmailAddress{Name ="",Address = ""};
             message.Subject = "MyName";
-            var messageResult = await _emailService.SendAsync(message);
+            var messageResult = await _emailService.SendAsync(message,_messageHelper.TestEmailConfiguration);
             Assert.That(messageResult,Is.Not.Null);
             Assert.That(messageResult.Status,Is.EqualTo(Status.Failure));
             Assert.That(messageResult.Exception,Is.InstanceOf<EmailConfigurationNotFoundException>());
         }
+
+        
     }
 }
