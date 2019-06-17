@@ -23,7 +23,8 @@ var message = _testEmailMessageBuilder.AddFromAddress("yourname","ToEmailAddress
                 .AddToAddresses("Receipent name","FromEmailAddress")
                 .AddSubject("Test Email")
                 .AddBody("Test Email")
-                .AddAttachment(new List<Attachment> { new Attachment{FileName = "full path FileName"}).Build();
+                .AddAttachment(new List<Attachment> { new Attachment{FileName = "full path FileName"})
+                .Build();
                 
 // create an instance of the EmailService
 IEmailService _emailService = new EmailService();
