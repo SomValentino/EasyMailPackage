@@ -6,7 +6,7 @@ Nuget package for sending quick emails. This abstraction over mailkit that does 
 3) Delete emails from server uisng IMAP or POP3 settings.
 
 
-# Send email
+## Send email
 
 ```C#
 // Create emailConfiguration for smtp
@@ -36,18 +36,19 @@ if(messageResult.Status == Status.Success){
 }
 ```
 
-# Retrieve emails from server
+## Retrieve emails from server
 
 ```C#
-// Create emailConfiguration for imap
+// Create emailConfiguration for imap server
 IEmailConfiguration imapEmailConfiguration = new EmailConfiguration{
   ServerAddress = "imap.gmail.com",
   Username = "YOUREMAIL",
   Password = "PASSWORD",
   Port = XXXX,
-  RequireSSL = false // depends on your server settings
+  RequireSSL = true // depends on your server settings
 }
 
+// Create emailConfiguration for POP server
 IEmailConfiguration popEmailConfiguration = new EmailConfiguration{
   ServerAddress = "pop.gmail.com", // use your server settings
   Username = "YOUREMAIL",
@@ -67,7 +68,7 @@ GetEmailMessageFromServerViaPopAsync(popEmailConfiguration, batchSize); // batch
 // Note that Attachments are returned as base64 string 
 ```
 
-# Delete emails from server
+## Delete emails from server
 
 ```C#
 // create an instance of the EmailService
