@@ -14,7 +14,8 @@ IEmailConfiguration smtpEmailConfiguration = new EmailConfiguration{
   ServerAddress = "smtp.gmail.com",
   Username = "YOUREMAIL",
   Password = "PASSWORD",
-  Port = XXXX
+  Port = XXXX,
+  RequireSSL = false // depends on your server settings
 }
 
 // Create an instance of EmailMessage builder
@@ -43,14 +44,16 @@ IEmailConfiguration imapEmailConfiguration = new EmailConfiguration{
   ServerAddress = "imap.gmail.com",
   Username = "YOUREMAIL",
   Password = "PASSWORD",
-  Port = XXXX
+  Port = XXXX,
+  RequireSSL = false // depends on your server settings
 }
 
 IEmailConfiguration popEmailConfiguration = new EmailConfiguration{
   ServerAddress = "pop.gmail.com", // use your server settings
   Username = "YOUREMAIL",
   Password = "PASSWORD",
-  Port = XXXX
+  Port = XXXX,
+  RequireSSL = false // depends on your server settings
 }
 
 // create an instance of the EmailService
