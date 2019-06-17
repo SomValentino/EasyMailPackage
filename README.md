@@ -54,7 +54,25 @@ IEmailConfiguration popEmailConfiguration = new EmailConfiguration{
 
 // create an instance of the EmailService
 IEmailService _emailService = new EmailService();
-List<ExtractedEmailMessage> extractedEmailMessages = await _emailService.GetEmailMessageFromServerViaImapAsync(imapEmailConfiguration, batchSize); // batchSize means the number of //emails to retrieve from the server using imap protocol
+List<ExtractedEmailMessage> extractedEmailMessages = await _emailService.
+GetEmailMessageFromServerViaImapAsync(imapEmailConfiguration, batchSize); // batchSize means the number of //emails to retrieve from the server using imap protocol
 
-List<ExtractedEmailMessage> extractedEmailMessages = await _emailService.GetEmailMessageFromServerViaImapAsync(popEmailConfiguration, batchSize); // batchSize means the number of //emails to retrieve from the server using pop protocol
+List<ExtractedEmailMessage> extractedEmailMessages = await _emailService.
+GetEmailMessageFromServerViaPopAsync(popEmailConfiguration, batchSize); // batchSize means the number of //emails to retrieve from the server using pop protocol
+
+// Note that Attachments are returned as base64 string 
+```
+
+# Delete emails from server
+
+```C#
+// create an instance of the EmailService
+IEmailService _emailService = new EmailService();
+
+await _emailService.DeleteEmailMessageFromImapServerAsync(extractedEmailMessages,
+             imapEmailConfiguration);
+
+await _emailService.DeleteEmailMessageFromPopServerAsync(extractedEmailMessages,
+             popEmailConfiguration);
+
 ```
