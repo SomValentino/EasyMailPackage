@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4010711f-1922-4d9e-b967-86c8c010564b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Common.Email.Package/Exceptions/EmailProcessAttachmentException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common.Email.Package/MessageInformation/Implementations/ExtractedEmailMessage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Common.Email.Package.Tests/Helpers/EmailMessageHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Email.Package.Tests/Helpers/EmailMessageHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common.Email.Package.Tests/Helpers/TestEmailConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Email.Package.Tests/Helpers/TestEmailConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common.Email.Package.Tests/IntegrationTests/EmailServiceIntegrationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Email.Package.Tests/IntegrationTests/EmailServiceIntegrationTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common.Email.Package.Tests/UnitTests/EmailServiceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Email.Package.Tests/UnitTests/EmailServiceTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common.Email.Package/Common.Email.Package.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Email.Package/Common.Email.Package.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common.Email.Package/Configuration/EmailConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Email.Package/Configuration/EmailConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common.Email.Package/Configuration/IEmailConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Email.Package/Configuration/IEmailConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common.Email.Package/Services/EmailService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Email.Package/Services/EmailService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common.Email.Package/Services/IEmailService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Email.Package/Services/IEmailService.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +29,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Common.Email.Package.Tests/UnitTests/EmailServiceTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
+            <state relative-caret-position="298">
               <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
               <folding>
                 <marker date="1560761839282" expanded="false" signature="6:314" ph="..." />
@@ -103,39 +93,39 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Common.Email.Package.Tests/Helpers/EmailMessageHelper.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="72" column="47" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
+            <state relative-caret-position="290">
+              <caret line="85" column="78" selection-start-line="85" selection-start-column="78" selection-end-line="85" selection-end-column="78" />
               <folding>
-                <marker date="1560763597198" expanded="false" signature="6:155" ph="..." />
-                <marker date="1560763597198" expanded="true" signature="201:2830" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="239:2828" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="759:2804" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="832:1148" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="883:984" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="1035:1134" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="1205:1292" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="1356:1522" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="1407:1508" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="1585:1749" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="1636:1735" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="1809:1939" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="1858:1925" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="2017:2200" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="2279:2496" ph="{...}" />
-                <marker date="1560763597198" expanded="true" signature="2575:2793" ph="{...}" />
+                <marker date="1560766676361" expanded="false" signature="6:155" ph="..." />
+                <marker date="1560766676361" expanded="true" signature="201:2923" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="239:2921" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="759:2897" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="832:1148" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="883:984" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="1035:1134" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="1205:1292" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="1356:1522" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="1407:1508" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="1585:1749" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="1636:1735" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="1809:1939" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="1858:1925" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="2017:2188" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="2267:2472" ph="{...}" />
+                <marker date="1560766676361" expanded="true" signature="2616:2822" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Common.Email.Package/Services/EmailService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
-              <caret line="137" column="9" lean-forward="true" selection-start-line="137" selection-start-column="9" selection-end-line="137" selection-end-column="9" />
+            <state relative-caret-position="136">
+              <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
               <folding>
                 <marker date="1560761364000" expanded="false" signature="6:451" ph="..." />
                 <marker date="1560761364000" expanded="true" signature="492:14332" ph="{...}" />
@@ -201,6 +191,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common.Email.Package/Services/IEmailService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <folding>
+                <marker date="1560715951387" expanded="false" signature="6:260" ph="..." />
+                <marker date="1560715951387" expanded="true" signature="301:1205" ph="{...}" />
+                <marker date="1560715951387" expanded="true" signature="338:1203" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common.Email.Package/Services/EmailMessageResult.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <folding>
+                <marker date="1555650463460" expanded="false" signature="6:86" ph="..." />
+                <marker date="1555650463460" expanded="true" signature="127:270" ph="{...}" />
+                <marker date="1555650463460" expanded="true" signature="165:268" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Common.Email.Package.Tests/IntegrationTests/EmailServiceIntegrationTests.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="417">
@@ -241,15 +259,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/74269E38-E7B8-4419-AF6D-9A07AF78BFF2/fd/e3f3ac6a/MailboxAddress.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="227" column="8" selection-start-line="227" selection-start-column="8" selection-end-line="227" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Common.Email.Package.Tests/Helpers/TestEmailMessageBuilder.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -257,21 +266,6 @@
                 <marker date="1555566715291" expanded="true" signature="6:109" ph="..." />
                 <marker date="1555566715291" expanded="true" signature="154:243" ph="{...}" />
                 <marker date="1555566715291" expanded="true" signature="219:241" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common.Email.Package/Exceptions/EmailSubjectNotFoundException.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding>
-                <marker date="1555653893513" expanded="true" signature="56:368" ph="{...}" />
-                <marker date="1555653893513" expanded="true" signature="117:366" ph="{...}" />
-                <marker date="1555653893513" expanded="true" signature="200:220" ph="{...}" />
-                <marker date="1555653893513" expanded="true" signature="340:360" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -393,8 +387,19 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="EmailSolution" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Common.Email.Package" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Services" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Common.Email.Package.Tests" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="EmailSolution" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Common.Email.Package.Tests" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Helpers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="EmailSolution" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Common.Email.Package.Tests" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="UnitTests" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -440,7 +445,7 @@
       <workItem from="1560661096416" duration="9321000" />
       <workItem from="1560759153756" duration="1010000" />
       <workItem from="1560760194091" duration="55000" />
-      <workItem from="1560760507489" duration="4409000" />
+      <workItem from="1560760507489" duration="5055000" />
     </task>
     <task id="LOCAL-00001" summary="First push of Common.Email.Package including:&#10;EmailMessageBuilder&#10;EmailService&#10;Nuit tests">
       <created>1555565391326</created>
@@ -467,7 +472,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48631000" />
+    <option name="totallyTimeSpent" value="49277000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -494,13 +499,13 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4981685" weight="0.3298611" />
-      <window_info anchor="bottom" id="NuGet" order="7" sideWeight="0.4981685" weight="0.32857144" />
+      <window_info anchor="bottom" id="NuGet" order="7" sideWeight="0.497558" visible="true" weight="0.3275463" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4981685" weight="0.32906976" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Unit Tests" order="11" sideWeight="0.5811966" visible="true" weight="0.3275463" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" sideWeight="0.5811966" weight="0.3275463" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4993895" weight="0.3298611" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.41880342" side_tool="true" visible="true" weight="0.3275463" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.502442" side_tool="true" visible="true" weight="0.3275463" />
       <window_info anchor="bottom" id="Build" order="14" sideWeight="0.498779" weight="0.32946634" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -687,16 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common.Email.Package/Services/EmailMessageResult.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <marker date="1555650463460" expanded="true" signature="165:268" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common.Email.Package/Configuration/IEmailConfiguration.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -775,18 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common.Email.Package/Services/IEmailService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="87" />
-          <folding>
-            <marker date="1560715951387" expanded="false" signature="6:260" ph="..." />
-            <marker date="1560715951387" expanded="true" signature="301:1205" ph="{...}" />
-            <marker date="1560715951387" expanded="true" signature="338:1203" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common.Email.Package/Exceptions/EmailProcessAttachmentException.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -817,50 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="227" column="8" selection-start-line="227" selection-start-column="8" selection-end-line="227" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common.Email.Package.Tests/UnitTests/EmailServiceTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
-          <folding>
-            <marker date="1560761839282" expanded="false" signature="6:314" ph="..." />
-            <marker date="1560761839282" expanded="true" signature="362:3992" ph="{...}" />
-            <marker date="1560761839282" expanded="true" signature="417:3990" ph="{...}" />
-            <marker date="1560761839282" expanded="true" signature="577:700" ph="{...}" />
-            <marker date="1560761839282" expanded="true" signature="843:1237" ph="{...}" />
-            <marker date="1560761839282" expanded="true" signature="1404:1814" ph="{...}" />
-            <marker date="1560761839282" expanded="true" signature="1985:2472" ph="{...}" />
-            <marker date="1560761839282" expanded="true" signature="2633:3191" ph="{...}" />
-            <marker date="1560761839282" expanded="true" signature="3370:3974" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common.Email.Package.Tests/Helpers/EmailMessageHelper.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="72" column="47" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
-          <folding>
-            <marker date="1560763597198" expanded="false" signature="6:155" ph="..." />
-            <marker date="1560763597198" expanded="true" signature="201:2830" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="239:2828" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="759:2804" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="832:1148" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="883:984" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="1035:1134" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="1205:1292" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="1356:1522" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="1407:1508" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="1585:1749" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="1636:1735" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="1809:1939" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="1858:1925" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="2017:2200" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="2279:2496" ph="{...}" />
-            <marker date="1560763597198" expanded="true" signature="2575:2793" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -954,10 +893,22 @@
     <entry file="file://$PROJECT_DIR$/Common.Email.Package/.gitIgnore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Common.Email.Package/Services/IEmailService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <marker date="1560715951387" expanded="false" signature="6:260" ph="..." />
+            <marker date="1560715951387" expanded="true" signature="301:1205" ph="{...}" />
+            <marker date="1560715951387" expanded="true" signature="338:1203" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Common.Email.Package/Services/EmailService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="137" column="9" lean-forward="true" selection-start-line="137" selection-start-column="9" selection-end-line="137" selection-end-column="9" />
+        <state relative-caret-position="136">
+          <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
           <folding>
             <marker date="1560761364000" expanded="false" signature="6:451" ph="..." />
             <marker date="1560761364000" expanded="true" signature="492:14332" ph="{...}" />
@@ -1017,6 +968,62 @@
             <marker date="1560761364000" expanded="true" signature="13776:13916" ph="{...}" />
             <marker date="1560761364000" expanded="true" signature="13933:14075" ph="{...}" />
             <marker date="1560761364000" expanded="true" signature="14156:14324" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common.Email.Package/Services/EmailMessageResult.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <marker date="1555650463460" expanded="false" signature="6:86" ph="..." />
+            <marker date="1555650463460" expanded="true" signature="127:270" ph="{...}" />
+            <marker date="1555650463460" expanded="true" signature="165:268" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common.Email.Package.Tests/UnitTests/EmailServiceTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+          <folding>
+            <marker date="1560761839282" expanded="false" signature="6:314" ph="..." />
+            <marker date="1560761839282" expanded="true" signature="362:3992" ph="{...}" />
+            <marker date="1560761839282" expanded="true" signature="417:3990" ph="{...}" />
+            <marker date="1560761839282" expanded="true" signature="577:700" ph="{...}" />
+            <marker date="1560761839282" expanded="true" signature="843:1237" ph="{...}" />
+            <marker date="1560761839282" expanded="true" signature="1404:1814" ph="{...}" />
+            <marker date="1560761839282" expanded="true" signature="1985:2472" ph="{...}" />
+            <marker date="1560761839282" expanded="true" signature="2633:3191" ph="{...}" />
+            <marker date="1560761839282" expanded="true" signature="3370:3974" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common.Email.Package.Tests/Helpers/EmailMessageHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="85" column="78" selection-start-line="85" selection-start-column="78" selection-end-line="85" selection-end-column="78" />
+          <folding>
+            <marker date="1560766676361" expanded="false" signature="6:155" ph="..." />
+            <marker date="1560766676361" expanded="true" signature="201:2923" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="239:2921" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="759:2897" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="832:1148" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="883:984" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="1035:1134" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="1205:1292" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="1356:1522" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="1407:1508" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="1585:1749" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="1636:1735" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="1809:1939" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="1858:1925" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="2017:2188" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="2267:2472" ph="{...}" />
+            <marker date="1560766676361" expanded="true" signature="2616:2822" ph="{...}" />
           </folding>
         </state>
       </provider>

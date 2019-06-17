@@ -62,28 +62,28 @@ namespace Common.Email.Package.Tests.Helpers
             TestEmailConfiguration = new TestEmailConfiguration
             {
                 ServerAddress = "smtp.gmail.com",
-                Username = "valazom@gmail.com",
-                Password = "Az0m-12345@#",
+                Username = "YOUREMAIL",
+                Password = "PASSWORD",
                 Port = 465
             };
 
             Pop3EmailConfiguration = new TestEmailConfiguration
             {
                 ServerAddress = "pop.gmail.com",
-                Username = "valazom@gmail.com",
-                Password = "Az0m-12345@#",
+                Username = "YOUREMAIL",
+                Password = "PASSWORD",
                 Port = 995,
                 RequireSSL = true
-            };
+            }; // this settings depend on your server settings and might change
 
             ImapEmailConfiguration = new TestEmailConfiguration
             {
                 ServerAddress = "imap.gmail.com",
-                Username = "valazom@gmail.com",
-                Password = "Az0m-12345@#",
+                Username = "YOUREMAIL",
+                Password = "PASSWORD",
                 Port = 993,
                 RequireSSL = true
-            };
+            };// this settings depend on your server settings and might change
         }
         
         
