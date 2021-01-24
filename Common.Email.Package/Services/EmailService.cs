@@ -156,7 +156,7 @@ namespace Common.Email.Package.Services
             using (var client = new Pop3Client())
             {
                 await ConnectToServer(popEmailConfiguration, client);
-                var totalMessages = batchsize <= -1 ? client.Count : batchsize;
+                var totalMessages = batchsize <= -1 || batchsize > client.Count ? client.Count : batchsize;
 
                 for (int i = 0; i < totalMessages; i++)
                 {

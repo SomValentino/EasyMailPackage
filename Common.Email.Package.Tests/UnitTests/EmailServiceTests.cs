@@ -76,7 +76,7 @@ namespace Common.Email.Package.Tests.UnitTests
             message.ToAddress.Add(new EmailAddress{Name="",Address = ""});
             message.FromAddress = new EmailAddress{Name ="",Address = ""};
             message.Subject = "MyName";
-            var messageResult = await _emailService.SendAsync(message,_messageHelper.TestEmailConfiguration);
+            var messageResult = await _emailService.SendAsync(message,null);
             Assert.That(messageResult,Is.Not.Null);
             Assert.That(messageResult.Status,Is.EqualTo(Status.Failure));
             Assert.That(messageResult.Exception,Is.InstanceOf<EmailConfigurationNotFoundException>());

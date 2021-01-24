@@ -57,7 +57,7 @@ namespace Common.Email.Package.Tests.IntegrationTests
             Assert.That(messageResult.Status,Is.EqualTo(Status.Failure)); 
             Assert.That(messageResult.Exception, Is.InstanceOf<EmailConnectionException>());
         }
-        
+
         [TestCase(5)]
         [TestCase(10)]
         [TestCase(15)]
@@ -67,11 +67,13 @@ namespace Common.Email.Package.Tests.IntegrationTests
         {
             var extractedMessages =
                 await _emailService.GetEmailMessageFromServerViaImapAsync(_messageHelper.ImapEmailConfiguration, batchSize);
-            
-            Assert.That(extractedMessages,Is.Not.Null);
-            Assert.That(extractedMessages.Count(),Is.EqualTo(batchSize));
+
+            var expectedCount = batchSize > extractedMessages.Count() ? extractedMessages.Count() : batchSize;
+
+            Assert.That(extractedMessages, Is.Not.Null);
+            Assert.That(extractedMessages.Count(), Is.EqualTo(expectedCount));
         }
-        
+
         [TestCase(5)]
         [TestCase(10)]
         [TestCase(15)]
@@ -81,10 +83,12 @@ namespace Common.Email.Package.Tests.IntegrationTests
         {
             var extractedMessages =
                 await _emailService.GetEmailMessageFromServerViaPopAsync(_messageHelper.Pop3EmailConfiguration, batchSize);
-            
-            Assert.That(extractedMessages,Is.Not.Null);
-            Assert.That(extractedMessages.Count(),Is.EqualTo(batchSize));
+
+            var expectedCount = batchSize > extractedMessages.Count() ? extractedMessages.Count() : batchSize;
+
+            Assert.That(extractedMessages, Is.Not.Null);
+            Assert.That(extractedMessages.Count(), Is.EqualTo(expectedCount));
         }
-        
+
     }
 }

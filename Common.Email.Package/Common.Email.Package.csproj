@@ -12,6 +12,6 @@
     <PackageTags>email;quick;sender;germstone;fast</PackageTags>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MailKit" Version="2.1.4" />
+    <PackageReference Include="MailKit" Version="2.10.1" />
   </ItemGroup>
 </Project>
